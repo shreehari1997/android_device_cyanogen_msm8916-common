@@ -17,7 +17,6 @@
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay \
- $(LOCAL_PATH)/overlay-havoc
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -222,6 +221,10 @@ endif
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
+    
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.tomato
 
 # Trust HAL
 PRODUCT_PACKAGES += \
